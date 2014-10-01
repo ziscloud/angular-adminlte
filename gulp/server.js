@@ -47,7 +47,8 @@ gulp.task('serve', ['watch'], function () {
     'app/scripts/**/*.js',
     'app/partials/**/*.html',
     'app/images/**/*'
-  ]);
+  ],
+    'Firefox');
 });
 
 gulp.task('serve:dist', ['build'], function () {
