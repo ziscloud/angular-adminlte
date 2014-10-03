@@ -6,8 +6,10 @@ angular.module('angularAdminlte', ['ngAnimate',
     'ngSanitize',
     'restangular',
     'ui.router',
+    'ui.footable',
     'angularAdminlteModules'
 ])
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');
+        $locationProvider.html5Mode(false);
     });

@@ -1,0 +1,161 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Account
+        <small>Account Detail</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a ui-sref="main.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a>
+        </li>
+        <li><a ui-sref="main.account">Account</a>
+        </li>
+        <li class="active">Mike Doe</li>
+    </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab">Profile</a>
+            </li>
+            <li><a href="#tab_2" data-toggle="tab">Activity</a>
+            </li>
+            <li><a href="#tab_3" data-toggle="tab">Opportunity</a>
+            </li>
+            <li><a href="#tab_4" data-toggle="tab">Order</a>
+            </li>
+            <li><a href="#tab_5" data-toggle="tab">Note &amp; Attachment</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_1">
+                <!-- title row -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="page-header">
+                            <i class="fa fa-user"></i> Mike Doe
+                            <small class="pull-right">Last Update Date: 2/10/2014</small>
+                        </h2>
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <dl class="dl-horizontal">
+                            <dt>Account Owner:</dt>
+                            <dd>Toto Lara</dd>
+                            <dt>Type:</dt>
+                            <dd>Account</dd>
+                            <dt>Parent Account:</dt>
+                            <dd>Joly Hdy</dd>
+                            <dt>Website:</dt>
+                            <dd>www.example.com</dd>
+                            <dt>Phone:</dt>
+                            <dd>(804) 123-5432</dd>
+                            <dt>Industry:</dt>
+                            <dd>E-Commercial</dd>
+                            <dt>Description:</dt>
+                            <dd>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab</dd>
+                        </dl>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="lead"><i class="fa fa-credit-card"></i> Billing Address</p>
+                        <dl class="dl-horizontal">
+                            <dt>Country:</dt>
+                            <dd>China</dd>
+                            <dt>Postal Code:</dt>
+                            <dd>123456</dd>
+                            <dt>State/Province:</dt>
+                            <dd>Guangdong</dd>
+                            <dt>City:</dt>
+                            <dd>Shenzhen</dd>
+                            <dt>Street:</dt>
+                            <dd>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles</dd>
+                        </dl>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-6">
+                        <p class="lead"><i class="fa fa-truck"></i> Shipping Address</p>
+                        <dl class="dl-horizontal">
+                            <dt>Country:</dt>
+                            <dd>China</dd>
+                            <dt>Postal Code:</dt>
+                            <dd>123456</dd>
+                            <dt>State/Province:</dt>
+                            <dd>Guangdong</dd>
+                            <dt>City:</dt>
+                            <dd>Shenzhen</dd>
+                            <dt>Street:</dt>
+                            <dd>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles</dd>
+                        </dl>
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="lead"><i class="fa fa-phone-square"></i> Contacts</p>
+                        <table class="table table-striped footable" data-sort="false">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th data-hide="phone">Phone</th>
+                                    <th>Mobile</th>
+                                    <th data-hide="phone">Fax</th>
+                                    <th data-hide="phone,tablet">Address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Call of Duty</td>
+                                    <td>example@example.com</td>
+                                    <td>455-981-221</td>
+                                    <td>455-981-221</td>
+                                    <td>455-981-221</td>
+                                    <td>El snort testosterone trophy driving gloves handsome</td>
+                                </tr>
+                                <tr>
+                                    <td>Need for Speed IV</td>
+                                    <td>example@example.com</td>
+                                    <td>455-981-221</td>
+                                    <td>455-981-221</td>
+                                    <td>247-925-726</td>
+                                    <td>Wes Anderson umami biodiesel</td>
+                                </tr>
+                                <tr>
+                                    <td>Monsters DVD</td>
+                                    <td>example@example.com</td>
+                                    <td>455-981-221</td>
+                                    <td>455-981-221</td>
+                                    <td>735-845-642</td>
+                                    <td>Terry Richardson helvetica tousled street art master</td>
+                                </tr>
+                                <tr>
+                                    <td>Grown Ups Blue Ray</td>
+                                    <td>example@example.com</td>
+                                    <td>455-981-221</td>
+                                    <td>455-981-221</td>
+                                    <td>422-568-642</td>
+                                    <td>Tousled lomo letterpress</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- this row will not appear when printing -->
+                <div class="row no-print">
+                    <div class="col-xs-12">
+                        <button class="btn btn-sm btn-default" onclick="window.print();"><i class="fa fa-print"></i> Print</button>
+                        <button class="btn btn-sm btn-primary pull-right"><i class="fa fa-download"></i> Generate PDF</button>
+                    </div>
+                </div>
+            </div>
+</section>

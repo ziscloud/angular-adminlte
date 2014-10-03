@@ -2,5 +2,6 @@
 
 angular.module('angularAdminlteModules', [
     'main',
-    'dashboard'
+    'dashboard',
+    'customer'
 ]);
