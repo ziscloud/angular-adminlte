@@ -1,0 +1,717 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Customer
+        <small>Contact</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a ui-sref="main.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a>
+        </li>
+        <li class="active">Contact</li>
+    </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-primary">
+                <div class="box-header" data-toggle="tooltip" title="Header tooltip">
+                <!-- tools box -->
+                    <div class="pull-right box-tools">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-info">Action</button>
+                            <button type="button" class="btn btn-sm btn-info dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Export All</a>
+                                </li>
+                                <li><a href="#">Export Filtered</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a ui-sref="main.contact.new"><button class="btn btn-sm btn-info">New Contact</button></a>
+                    </div>
+                    <!-- /. tools -->
+
+                    <h3 class="box-title"><i class="fa fa-book"></i> Contact Book</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                <input type="text" class="form-control" placeholder="Enter To Filter Contact" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="slider" slider-nav class="clearfix slider">
+                                <div class="slider-content" style="height: 504px;">
+                                    <ul class="list-unstyled">
+                                        <li id="a" class="selected">
+                                            <a name="a" class="title">A</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Adam</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Alex</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Ali</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Apple</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Arthur</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Ashley</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="b">
+                                            <a name="b" class="title">B</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="c">
+                                            <a name="c" class="title">c</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="d">
+                                            <a name="d" class="title">d</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="e">
+                                            <a name="e" class="title">E</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="f">
+                                            <a name="f" class="title">f</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="g">
+                                            <a name="g" class="title">g</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="h">
+                                            <a name="h" class="title">h</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="i">
+                                            <a name="i" class="title">i</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="j">
+                                            <a name="j" class="title">j</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="k">
+                                            <a name="k" class="title">k</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="l">
+                                            <a name="l" class="title">l</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="m">
+                                            <a name="m" class="title">m</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="n">
+                                            <a name="n" class="title">n</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="o">
+                                            <a name="o" class="title">o</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="p">
+                                            <a name="p" class="title">p</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="q">
+                                            <a name="q" class="title">q</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="r">
+                                            <a name="r" class="title">r</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="s">
+                                            <a name="s" class="title">s</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="t">
+                                            <a name="t" class="title">t</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="u">
+                                            <a name="u" class="title">u</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="v">
+                                            <a name="v" class="title">v</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Barry</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Becky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Biff</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Billy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bozarking</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Bryan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="w">
+                                            <a name="w" class="title">w</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Calista</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cathy</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Chris</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cinderella</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Corky</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">Cypher</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="x">
+                                            <a name="x" class="title">x</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="y">
+                                            <a name="y" class="title">y</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="z">
+                                            <a name="z" class="title">z</a>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">damien</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">danny</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">denver</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">devon</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">doug</a>
+                                                </li>
+                                                <li>
+                                                    <a ui-sref="main.contact.detail({id: 12})">dustin</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="slider-nav" style="height: 504px; top: 20px;">
+                                    <ul>
+                                        <li><a alt="#a">a</a>
+                                        </li>
+                                        <li><a alt="#b">b</a>
+                                        </li>
+                                        <li><a alt="#c">c</a>
+                                        </li>
+                                        <li><a alt="#d">d</a>
+                                        </li>
+                                        <li><a alt="#e">e</a>
+                                        </li>
+                                        <li><a alt="#f">f</a>
+                                        </li>
+                                        <li><a alt="#g">g</a>
+                                        </li>
+                                        <li><a alt="#h">h</a>
+                                        </li>
+                                        <li><a alt="#i">i</a>
+                                        </li>
+                                        <li><a alt="#j">j</a>
+                                        </li>
+                                        <li><a alt="#k">k</a>
+                                        </li>
+                                        <li><a alt="#l">l</a>
+                                        </li>
+                                        <li><a alt="#m">m</a>
+                                        </li>
+                                        <li><a alt="#n">n</a>
+                                        </li>
+                                        <li><a alt="#o">o</a>
+                                        </li>
+                                        <li><a alt="#p">p</a>
+                                        </li>
+                                        <li><a alt="#q">q</a>
+                                        </li>
+                                        <li><a alt="#r">r</a>
+                                        </li>
+                                        <li><a alt="#s">s</a>
+                                        </li>
+                                        <li><a alt="#t">t</a>
+                                        </li>
+                                        <li><a alt="#u">u</a>
+                                        </li>
+                                        <li><a alt="#v">v</a>
+                                        </li>
+                                        <li><a alt="#w">w</a>
+                                        </li>
+                                        <li><a alt="#x">x</a>
+                                        </li>
+                                        <li><a alt="#y">y</a>
+                                        </li>
+                                        <li><a alt="#z">z</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

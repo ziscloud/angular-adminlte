@@ -1,7 +1,9 @@
 'use strict';
 
-angular.module('angularAdminlteModules', [
+angular.module('adminlte.modules', [
     'main',
     'dashboard',
-    'customer'
+    'account',
+    'contact',
+    'lead'
 ]);

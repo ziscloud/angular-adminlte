@@ -1,0 +1,119 @@
+/*
+    sliderNav
+*/
+
+@bg: none repeat scroll 0 0 #dce1e5;
+
+/*
+*/
+
+.slider {
+    display: block;
+    min-height: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    ul {
+        list-style: none outside none;
+        margin: 0;
+    }
+    .slider-nav {
+        background: @bg;
+
+margin-top: 10px;
+        min-height: 250px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        ul {
+            padding: 5px 0;
+            li {
+                a {
+                    color: #807f7f;
+                    cursor: pointer;
+                    display: block;
+                    font-weight: bold;
+                    line-height: 13px;
+                    padding: 3px 15px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .arrow:before {
+        content: "";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        position: relative;
+        text-decoration: inherit;
+        top: 3px;
+    }
+    .arrow.down:before {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        position: relative;
+        text-decoration: inherit;
+        content: "";
+        top: 5px;
+    }
+    .slide-up {
+        background: @bg;
+
+cursor: pointer;
+        float: right;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    .slide-down {
+        background: @bg;
+
+cursor: pointer;
+        float: right;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+}
+.slider-content {
+    display: block;
+    float: left;
+    min-height: 250px;
+    overflow: auto;
+    width: 100%;
+    ul {
+        display: block;
+        float: left;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        li {
+            float: left;
+            width: 100%;
+            a {
+                border-bottom: 1px solid #dce1e5;
+                display: block;
+                padding: 5px 10px;
+                text-transform: capitalize;
+                &:hover {
+                    background: none repeat scroll 0 0 #f4f7f9;
+                }
+            }
+        }
+    }
+    .title {
+        background: @bg;
+        color: #143249;
+        float: left;
+        font-weight: bold;
+        padding: 5px 0;
+        text-indent: 10px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+}

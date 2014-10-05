@@ -4,12 +4,16 @@ angular.module('angularAdminlte', ['ngAnimate',
     'ngCookies',
     'ngTouch',
     'ngSanitize',
+    'ngAnimate',
     'restangular',
+    'mgcrea.ngStrap',
     'ui.router',
     'ui.footable',
-    'angularAdminlteModules'
+    'ui.select',
+    'adminlte.modules'
 ])
-    .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $locationProvider, uiSelectConfig) {
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(false);
+        uiSelectConfig.theme = 'bootstrap';
     });
