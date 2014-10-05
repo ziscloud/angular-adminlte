@@ -5,5 +5,6 @@ angular.module('adminlte.modules', [
     'dashboard',
     'account',
     'contact',
-    'lead'
+    'lead',
+    'opportunity'
 ]);
