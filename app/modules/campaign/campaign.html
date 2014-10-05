@@ -1,13 +1,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Customer
-        <small>Account</small>
+        Marketing
+        <small>Campaign</small>
     </h1>
     <ol class="breadcrumb">
         <li><a ui-sref="main.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a>
         </li>
-        <li class="active">Account</li>
+        <li class="active">Campaign</li>
     </ol>
 </section>
 
@@ -23,7 +23,7 @@
                         150
                     </h3>
                     <p>
-                        Total Account
+                        Total Campaign
                     </p>
                 </div>
                 <div class="icon">
@@ -41,7 +41,7 @@
                         53
                     </h3>
                     <p>
-                        New Customer / Year
+                        New Marketing / Year
                     </p>
                 </div>
                 <div class="icon">
@@ -59,7 +59,7 @@
                         44
                     </h3>
                     <p>
-                        New Customer / Month
+                        New Marketing / Month
                     </p>
                 </div>
                 <div class="icon">
@@ -77,7 +77,7 @@
                         65
                     </h3>
                     <p>
-                        Active Customer
+                        Active Marketing
                     </p>
                 </div>
                 <div class="icon">
@@ -109,12 +109,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <a ui-sref="main.account.new"><button class="btn btn-sm btn-info">New Account</button></a>
+                        <a ui-sref="main.campaign.new"><button class="btn btn-sm btn-info">New Campaign</button></a>
                     </div>
                     <!-- /. tools -->
 
                     <i class="fa fa-users"></i>
-                    <h3 class="box-title">Accounts</h3>
+                    <h3 class="box-title">Campaigns</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -125,7 +125,10 @@
                                 <th data-type="numeric" data-sort-initial="true">ID</th>
                                 <th>Name</th>
                                 <th>Type</th>
-                                <th>Industry</th>
+                                <th>Parent Campaign</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Active</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -133,9 +136,14 @@
                             <tr>
                                 <td><input type="checkbox"></td>
                                 <td>183</td>
-                                <td><a ui-sref="main.account.detail({id: 183})">John Doe</a></td>
+                                <td><a ui-sref="main.campaign.detail({id: 183})">John Doe</a></td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-success">Approved</span>
                                 </td>
@@ -146,6 +154,11 @@
                                 <td>Jane Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-warning">Pending</span>
                                 </td>
@@ -156,6 +169,11 @@
                                 <td>Bob Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-primary">Approved</span>
                                 </td>
@@ -166,6 +184,11 @@
                                 <td>Mike Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-danger">Denied</span>
                                 </td>
@@ -176,6 +199,11 @@
                                 <td>John Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-success">Approved</span>
                                 </td>
@@ -186,6 +214,11 @@
                                 <td>Jane Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-warning">Pending</span>
                                 </td>
@@ -196,6 +229,11 @@
                                 <td>Bob Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-primary">Approved</span>
                                 </td>
@@ -206,6 +244,11 @@
                                 <td>Mike Doe</td>
                                 <td>or sit amet salami</td>
                                 <td>Bacon ipsum dolor sit amet salami</td>
+                                <td>2/10/2014</td>
+                                <td>2/10/2014</td>
+                                <td>
+                                    <span class="label label-success">Approved</span>
+                                </td>
                                 <td>
                                     <span class="label label-danger">Denied</span>
                                 </td>
@@ -213,7 +256,7 @@
                         </tbody>
                         <tfoot class="hide-if-no-paging">
                             <tr>
-                                <td colspan="6" align="center">
+                                <td colspan="9" align="center">
                                     <ul class="pagination"></ul>
                                 </td>
                             </tr>

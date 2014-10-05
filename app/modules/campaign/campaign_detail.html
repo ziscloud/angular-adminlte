@@ -1,0 +1,92 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Campaign
+        <small>Campaign Detail</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a ui-sref="main.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a>
+        </li>
+        <li><a ui-sref="main.account">Campaign</a>
+        </li>
+        <li class="active">Mike Doe</li>
+    </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="nav-tabs-custom" bs-tabs>
+        <!-- use data-title instead of title attribute to avoid the default browser behavior of title -->
+        <div data-title="<i class='fa fa-user'></i> Profile" bs-pane>
+          <div class="tab-pane active" id="profile">
+                <!-- title row -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="page-header">
+                            <i class="fa fa-user"></i> Mike Doe
+                            <small class="pull-right">Last Update Date: 2/10/2014</small>
+                        </h2>
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <dl class="dl-horizontal">
+                            <dt class="text-muted">Status:</dt>
+                            <dd><span class="label label-success">Approved</span></dd>
+                            <dt class="text-muted">Campaign Owner:</dt>
+                            <dd>Toto Lara</dd>
+                            <dt class="text-muted">Active:</dt>
+                            <dd>disqus groupo</dd>
+                            <dt class="text-muted">Parent Campaign:</dt>
+                            <dd>Campaign</dd>
+                            <dt class="text-muted">Start Date:</dt>
+                            <dd>2/10/2014</dd>
+                            <dt class="text-muted">End Date:</dt>
+                            <dd>2/10/2014</dd>
+                            <dt class="text-muted">Type:</dt>
+                            <dd>E-Commercial</dd>
+                            <dt class="text-muted">Description:</dt>
+                            <dd>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab</dd>
+                        </dl>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="campaign"><i class="fa fa-envelope-o"></i> Planning</p>
+                        <dl class="dl-horizontal">
+                            <dt class="text-muted">Num Sent:</dt>
+                            <dd>China</dd>
+                            <dt class="text-muted">Budgeted Cost:</dt>
+                            <dd>123456</dd>
+                            <dt class="text-muted">Actual Cost:</dt>
+                            <dd>123456</dd>
+                            <dt class="text-muted">Expected Response(%):</dt>
+                            <dd>12%</dd>
+                            <dt class="text-muted">Expected Revenue:</dt>
+                            <dd>1231</dd>
+                        </dl>
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <!-- this row will not appear when printing -->
+                <div class="row no-print">
+                    <div class="col-xs-12">
+                        <button class="btn btn-sm btn-default" onclick="window.print();"><i class="fa fa-print"></i> Print</button>
+                        <button class="btn btn-sm btn-primary pull-right"><i class="fa fa-download"></i> Generate PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-title="<i class='fa fa-rss'></i> Campaign Members" bs-pane>Campaign Members</div>
+        <div data-title="<i class='fa fa-bars'></i> Campaign Hierarchy" bs-pane>Campaign Hierarchy</div>
+        <div data-title="<i class='fa fa-envelope'></i> Opportunities" bs-pane>Opportunities</div>
+        <div data-title="<i class='fa fa-info'></i> Note &amp; Attachment" bs-pane>Note &amp; Attachment</div>
+
+    </div>
+</section>
