@@ -7,5 +7,6 @@ angular.module('adminlte.modules', [
     'contact',
     'lead',
     'opportunity',
-    'campaign'
+    'campaign',
+    'quote'
 ]);
